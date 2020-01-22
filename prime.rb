@@ -67,13 +67,7 @@ def prime?(int)
   elsif int == 2 || int == 3 
     return true 
   else 
-    array.any? do |i|
-      if int % i == 0 
-        puts "i is #{i} int is #{int}"
-        return false
-      else
-        puts array 
-        return true 
+    array.none? {|i| int % i == 0}
       end
     end
    end
