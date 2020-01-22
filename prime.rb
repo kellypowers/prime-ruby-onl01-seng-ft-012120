@@ -68,8 +68,6 @@ def prime?(int)
     return true 
   else 
     array.none? {|i| int % i == 0}
-      end
-    end
    end
 end
 
