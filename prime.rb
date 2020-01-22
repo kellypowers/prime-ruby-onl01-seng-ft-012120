@@ -61,7 +61,6 @@
 # end
   
 def prime?(int)
-  i = 2
   array = (2...int).to_a 
   if int <= 1 
     return false
