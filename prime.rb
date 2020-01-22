@@ -71,10 +71,11 @@ def prime?(int)
     array.any? do |i|
       if int % i == 0 
         return false
+      else
+        return true 
       end
     end
-
-    end
+   end
 end
 
 prime?(4)
