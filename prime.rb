@@ -70,6 +70,7 @@ def prime?(int)
   else 
     array.any? do |i|
       if int % i == 0 
+        puts "i is #{i} int is #{int}"
         return false
       else
         return true 
