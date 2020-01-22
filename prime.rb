@@ -72,6 +72,7 @@ def prime?(int)
         puts "i is #{i} int is #{int}"
         return false
       else
+        puts array 
         return true 
       end
     end
