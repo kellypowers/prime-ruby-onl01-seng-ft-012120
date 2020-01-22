@@ -68,13 +68,12 @@ def prime?(int)
   elsif int == 2 || int == 3 
     return true 
   else 
-    while i < array.length-1 do 
-      if int % i == 0
-        puts "i is #{i} int is #{int}"
+    array.any? do |i|
+      if int % i == 0 
         return false
       end
-      i += 1 
-      end
+    end
+
     end
 end
 
